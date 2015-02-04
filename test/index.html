@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>pixi.js example 1</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #000000;
+		}
+	</style>
+	<script src="./libs/tweenjs-0.5.1.min.js"></script>
+	<script src="./libs/pixi.dev.js"></script>
+	<script src="./libs/CrossFadeFilter.js"></script>
+	<script src="./libs/PretransFilter.js"></script>
+	<script src="./libs/UniversalFilter.js"></script>
+</head>
+<body>
+	<script>
+
+	// create an new instance of a pixi stage
+	var Tween = createjs.Tween;
+
+	var stage = new PIXI.Stage(0x333333);
+
+	// create a renderer instance.
+	var renderer = PIXI.autoDetectRenderer(800, 600);
+
+	// add the renderer view element to the DOM
+	document.body.appendChild(renderer.view);
+
+	requestAnimFrame( animate );
+
+	// var Global = {};
+	// Global.tickFunctions = [];
+
+	// create a texture from an image path
+
+
+	// // center the sprites anchor point
+	// belly.anchor.x = 0.5;
+	// belly.anchor.y = 0.5;
+
+	// // move the sprite t the center of the screen
+	// belly.position.x = 400;
+	// belly.position.y = 300;
+
+	// var blurFilter = new PIXI.BlurFilter();
+	// blurFilter.blur = 50;
+	// // var asciiFilter = new PIXI.AsciiFilter();
+	// // asciiFilter.size = 20;
+	// var pixelateFilter = new PIXI.PixelateFilter();
+	// pixelateFilter.size = new PIXI.Point (12,12);
+	// var invertFilter = new PIXI.InvertFilter();
+	// belly.filters = [blurFilter,pixelateFilter,invertFilter];
+
+	// stage.addChild(belly);
+
+	var bgTexture = PIXI.Texture.fromImage('./res/BG32a_1280.jpg');
+	var bg = new PIXI.Sprite(bgTexture);
+	bg.zorder = 1;
+	bg.position.x = 100;
+	bg.position.y = 100;
+	bg.scale = new PIXI.Point(600/720,600/720);
+
+
+	var bg2Texture = PIXI.Texture.fromImage('./res/BG25a_1280.jpg');
+	var bg2Texture = new PIXI.Texture(bg2Texture,new PIXI.Rectangle(50,10,150,300));
+	var bg2 = new PIXI.Sprite(bg2Texture);
+	// bg2.zorder = 2;
+	// bg2.position.x = 50;
+	// bg2.position.y = 50;
+	// bg2.scale = new PIXI.Point(600/720,600/720);
+	
+
+
+	// var mapFilter = new PIXI.NormalMapFilter(ruleTexture);
+
+	//bg.filters = [mapFilter];
+
+	
+
+	//
+
+	var container = new PIXI.Sprite();
+
+	container.x = 50;
+	container.y = 50;
+
+	container._width = 1000;
+	container._height = 1000;
+
+	container.addChild(bg);
+
+	container.addChild(bg2);
+
+	container.children.sort(function(a,b){
+		return a.zorder > b.zorder;
+	});
+
+
+	// //container.setChildIndex(bg,30);
+
+	// console.log(container.children)
+
+	stage.addChild(container);
+
+	//var bufferRenderder = new PIXI.WebGLRenderer(800,600);
+	//var bufferStage = new PIXI.Stage(0x333333);
+	
+
+
+	var lastTime;
+	function animate() {
+		requestAnimFrame( animate );
+		if(Date.now()-lastTime<17)
+			return
+
+		// render the stage   
+		Tween.tick(Date.now()-lastTime);
+		renderer.render(stage);
+		lastTime = Date.now();
+	}
+
+	var pretransTexture;
+	function pretrans(){
+		//bufferStage.addChild(container);
+		//bufferRenderder.render(bufferStage);
+		//stage.addChild(container);
+		// pretransTexture = new PIXI.Texture.fromCanvas(bufferRenderder.view);
+		var batch = new PIXI.TempDisplayObjectContainer();
+		batch.addChild(bg);
+		var renderTexture = new PIXI.RenderTexture(800, 600);
+		renderTexture.render(batch);
+		pretransTexture = renderTexture;
+
+		var pretransFilter = new PIXI.PretransFilter(pretransTexture);
+		container.filters = [pretransFilter];
+	}
+
+	var crossfadeFilter;
+	var universalFilter;
+	function setFilters(){
+		//crossfadeFilter = new PIXI.CrossFadeFilter(pretransTexture);
+		var ruleTexture = PIXI.Texture.fromImage('./res/010.bmp');
+		universalFilter = new PIXI.UniversalFilter(pretransTexture,ruleTexture);
+	}
+
+	function doSomething(){
+		// var bellyTexture = PIXI.Texture.fromImage("./res/test.png");
+		// var belly = new PIXI.Sprite(bellyTexture);
+		// container.addChild(belly);
+
+		var bg2Texture = PIXI.Texture.fromImage('./res/BG25a_1280.jpg');
+		var bg2 = new PIXI.Sprite(bg2Texture);
+		bg2.position.x = 0;
+		bg2.position.y = 0;
+		bg2.scale = new PIXI.Point(600/720,600/720);
+		container.addChild(bg2);
+	}
+	var x={};
+	x.a = 0;
+	function trans(){
+		//container.filters = [crossfadeFilter];
+		//container.filters = null;
+		//crossfadeFilter.progress = 0;
+		//Global.tickFunctions.push(function(){crossfadeFilter.progress += 0.006;});
+
+		container.filters = [universalFilter];
+		universalFilter.progress = 0;
+		Tween.get(universalFilter).wait(0).to({progress:1}, 1000);
+		//Global.tickFunctions.push(function(){universalFilter.progress += 0.006;});
+	}
+
+	function test(){
+		pretrans();
+		setFilters();
+		doSomething();
+		trans();
+	}
+
+	</script>
+
+	</body>
+</html>

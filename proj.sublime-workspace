@@ -1,0 +1,1356 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"con",
+				"console"
+			],
+			[
+				"cos",
+				"console"
+			],
+			[
+				"cha",
+				"characterPositionX"
+			],
+			[
+				"max",
+				"maxLineWidth"
+			],
+			[
+				"st",
+				"style"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"wa",
+				"wrappedText"
+			],
+			[
+				"set",
+				"setText"
+			],
+			[
+				"tex",
+				"textSprite"
+			],
+			[
+				"settt",
+				"setTextInterval"
+			],
+			[
+				"sett",
+				"setTextSpeed"
+			],
+			[
+				"char",
+				"characterWidths"
+			],
+			[
+				"curr",
+				"_currentLine"
+			],
+			[
+				"wra",
+				"wrappedText"
+			],
+			[
+				"wr",
+				"wrappedText"
+			],
+			[
+				"lin",
+				"lineWidth"
+			],
+			[
+				"line",
+				"lineWidths"
+			],
+			[
+				"lineW",
+				"lineWidths"
+			],
+			[
+				"dr",
+				"dropShadow"
+			],
+			[
+				"upd",
+				"updateText"
+			],
+			[
+				"as",
+				"EastAsianText"
+			],
+			[
+				"wor",
+				"wordWrapWidth"
+			],
+			[
+				"pI",
+				"PIXI"
+			],
+			[
+				"x",
+				"textXInterval"
+			],
+			[
+				"fil",
+				"file_color"
+			],
+			[
+				"w",
+				"white"
+			],
+			[
+				"sta",
+				"stageConfig"
+			],
+			[
+				"mess",
+				"messageLayer"
+			],
+			[
+				"te",
+				"textNum"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"def",
+				"defaultStyle"
+			],
+			[
+				"ani",
+				"animate_start"
+			],
+			[
+				"anima",
+				"animation"
+			],
+			[
+				"bg",
+				"bgTexture"
+			],
+			[
+				"sp",
+				"spriteMap"
+			],
+			[
+				"ce",
+				"cellHeight"
+			],
+			[
+				"cel",
+				"cellWidth"
+			],
+			[
+				"ad",
+				"addto"
+			],
+			[
+				"file",
+				"files"
+			],
+			[
+				"del",
+				"delay"
+			],
+			[
+				"des",
+				"destroybase"
+			],
+			[
+				"no",
+				"now"
+			],
+			[
+				"cr",
+				"currentCell"
+			],
+			[
+				"loo",
+				"loops"
+			],
+			[
+				"on",
+				"onBaseTextureUpdate"
+			],
+			[
+				"On",
+				"onBaseTextureUpdate"
+			],
+			[
+				"de",
+				"destroy"
+			],
+			[
+				"wei",
+				"weightY"
+			],
+			[
+				"spr",
+				"spriteMap"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"add",
+				"addChild"
+			],
+			[
+				"text",
+				"textures"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"fr",
+				"frame"
+			],
+			[
+				"tx",
+				"texture"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"po",
+				"point"
+			],
+			[
+				"sor",
+				"sortByZorder"
+			],
+			[
+				"se",
+				"set"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"col",
+				"colorArr"
+			],
+			[
+				"bac",
+				"backgroundColorArray"
+			],
+			[
+				"hex",
+				"hex2rgba"
+			],
+			[
+				"ren",
+				"renderer"
+			],
+			[
+				"COLOR_",
+				"COLOR_BURN"
+			],
+			[
+				"COLOR",
+				"COLOR"
+			],
+			[
+				"NO",
+				"NORMAL"
+			],
+			[
+				"ALP",
+				"SRC_ALPHA"
+			],
+			[
+				"colo",
+				"color_RGBA"
+			],
+			[
+				"remo",
+				"remove"
+			],
+			[
+				"rem",
+				"remove"
+			],
+			[
+				"re",
+				"rect"
+			],
+			[
+				"remove",
+				"removeChild"
+			],
+			[
+				"chi",
+				"children"
+			],
+			[
+				"in",
+				"index"
+			],
+			[
+				"tar",
+				"targetSprite"
+			],
+			[
+				"pi",
+				"PIXI"
+			],
+			[
+				"pos",
+				"pos"
+			],
+			[
+				"ba",
+				"batch"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"ch",
+				"children"
+			],
+			[
+				"vte",
+				"vTextureCoord_invert"
+			],
+			[
+				"rend",
+				"renderTexture"
+			],
+			[
+				"uni",
+				"universalFilter"
+			],
+			[
+				"bel",
+				"belly"
+			],
+			[
+				"bell",
+				"bellyTexture"
+			],
+			[
+				"ti",
+				"tickFunctions"
+			],
+			[
+				"fu",
+				"tickFunctions"
+			],
+			[
+				"sa",
+				"stage"
+			],
+			[
+				"buff",
+				"bufferStage"
+			],
+			[
+				"red",
+				"renderer"
+			],
+			[
+				"ru",
+				"rule"
+			],
+			[
+				"rul",
+				"ruleTexture"
+			],
+			[
+				"pr",
+				"pretrans"
+			],
+			[
+				"pre",
+				"PretransFilter"
+			],
+			[
+				"pro",
+				"progress"
+			],
+			[
+				"u",
+				"uSampler"
+			],
+			[
+				"fi",
+				"filters"
+			],
+			[
+				"ma",
+				"mapFilter"
+			],
+			[
+				"Pi",
+				"PIXI"
+			],
+			[
+				"fro",
+				"fromImage"
+			],
+			[
+				"pix",
+				"pixelateFilter"
+			],
+			[
+				"node",
+				"nodeRSA"
+			],
+			[
+				"gam",
+				"game"
+			],
+			[
+				"pla",
+				"player"
+			],
+			[
+				"is",
+				"isp_id"
+			],
+			[
+				"reg",
+				"region_id"
+			],
+			[
+				"count",
+				"county_id"
+			],
+			[
+				"coun",
+				"county"
+			],
+			[
+				"cit",
+				"city_id"
+			],
+			[
+				"ar",
+				"area_id"
+			],
+			[
+				"end",
+				"endTime"
+			],
+			[
+				"ser",
+				"series"
+			],
+			[
+				"acc",
+				"account"
+			],
+			[
+				"pl",
+				"player"
+			],
+			[
+				"pass",
+				"passport"
+			],
+			[
+				"cont",
+				"conditions"
+			],
+			[
+				"req",
+				"req"
+			],
+			[
+				"get",
+				"getIndexByValue"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"gi",
+				"giftcode"
+			],
+			[
+				"per",
+				"permission"
+			],
+			[
+				"tem",
+				"temp"
+			],
+			[
+				"fin",
+				"findOne"
+			],
+			[
+				"log",
+				"loginRecord"
+			],
+			[
+				"rec",
+				"recordModel"
+			],
+			[
+				"fn",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/modules/Graphics.js",
+			"settings":
+			{
+				"buffer_size": 11674,
+				"line_ending": "Windows",
+				"name": "define"
+			}
+		},
+		{
+			"file": "/D/workspace/BKEngine/BKEngine/Classes/Graphic.cpp",
+			"settings":
+			{
+				"buffer_size": 60471,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/workspace/BKEngine/BKEngine/Classes/Node/Layer.h",
+			"settings":
+			{
+				"buffer_size": 4981,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/workspace/BKEngine/BKEngine/Classes/Node/Layer.cpp",
+			"settings":
+			{
+				"buffer_size": 29145,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/workspace/BKEngine/BKEngine/Classes/Graphic.h",
+			"settings":
+			{
+				"buffer_size": 10087,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/views/index.html",
+			"settings":
+			{
+				"buffer_size": 2024,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "test/index.html",
+			"settings":
+			{
+				"buffer_size": 4507,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "test/libs/pixi.dev.js",
+			"settings":
+			{
+				"buffer_size": 569029,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/modules/Graphics/MessageLayer.js",
+			"settings":
+			{
+				"buffer_size": 2058,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/modules/Graphics/pixi.dev.js",
+			"settings":
+			{
+				"buffer_size": 567672,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/modules/Graphics/EastAsianText.js",
+			"settings":
+			{
+				"buffer_size": 6174,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 58.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"package control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"format",
+				"Snippet: for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"ja",
+				"Snippet: Object Value JS"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/workspace/iceleaf/src/modules/Graphics/Text.js",
+		"/D/workspace/iceleaf/src/modules/Graphics/Animation.js",
+		"/D/workspace/iceleaf/src/modules/Graphics/Layer.js",
+		"/D/workspace/iceleaf/src/modules/Environment.js",
+		"/D/workspace/iceleaf/src/modules/Graphics/pixi.dev.js",
+		"/D/workspace/iceleaf/docs/PIXI的bug.txt",
+		"/D/workspace/iceleaf/src/modules/iceleaf.js",
+		"/D/workspace/BKEngine/BKEngine/Classes/Node/Sprite.cpp",
+		"/D/workspace/BKEngine/BKEngine/Classes/Node/Sprite.h",
+		"/D/贾威/QQ记录/523063148/FileRecv/LayerShader.h",
+		"/D/workspace/iceleaf/src/modules/Graphics/TempDisplayObjectContainer.js",
+		"/D/workspace/iceleaf/src/modules/Graphics/ColorShader.js",
+		"/D/workspace/BKEngine/BKEngine/Classes/Node/Image.h",
+		"/D/workspace/BKEngine/BKEngine/Classes/Node/ImageSupport.h",
+		"/D/workspace/BKEngine/BKEngine/Classes/Common.h",
+		"/D/workspace/BKEngine/BKEngine/Classes/debug_new.cpp",
+		"/D/workspace/BKEngine/BKEngine/Classes/Functions.h",
+		"/D/workspace/BKEngine/BKEngine/Classes/pch.h",
+		"/D/workspace/iceleaf/src/modules/Graphics/PretransFilter.js",
+		"/D/workspace/iceleaf/bakery_web/app.js",
+		"/D/workspace/iceleaf/test/index.html",
+		"/D/workspace/iceleaf/src/modules/Graphics/CrossFadeFilter.js",
+		"/D/workspace/iceleaf/src/modules/Graphics/UniversalFilter.js",
+		"/D/workspace/iceleaf/pixi.js-master/bin/pixi.dev.js.map",
+		"/D/workspace/iceleaf/pixi.js-master/bin/pixi.dev.js",
+		"/D/workspace/iceleaf/pixi.js-master/bin/pixi.js",
+		"/D/workspace/iceleaf/test/libs/PretransFilter.js",
+		"/D/workspace/iceleaf/test/libs/UniversalFilter.js",
+		"/D/workspace/iceleaf/test/libs/CrossFadeFilter.js",
+		"/D/workspace/iceleaf/live2d/framework/Live2DFramework.js",
+		"/D/workspace/iceleaf/live2d/simple.html",
+		"/D/workspace/iceleaf/live2d/src/Simple.js",
+		"/D/Games/永恆的賽妮亞_v1.55/素材來源.txt",
+		"/D/Games/永恆的賽妮亞_v1.55/遊戲操作方式.txt",
+		"/D/Games/永恆的賽妮亞_v1.55/製作成員.txt",
+		"/D/Games/永恆的賽妮亞_v1.55/贊助方式.txt",
+		"/D/workspace/iceleaf/pixi.js-master/Gruntfile.js",
+		"/D/workspace/iceleaf/test/libs/pixi.js",
+		"/C/Users/Icemic/Documents/My Bluetooth/out.log",
+		"/D/workspace/bkeCloud/routes/play.js",
+		"/D/workspace/bkeCloud/routes/gameMaker.js",
+		"/D/workspace/bakery_web/extern/Array.js",
+		"/D/workspace/bakery_web/extern/dataFormat.js",
+		"/D/Program(x64)/Sublime Text 2 x64/Data/Packages/User/Preferences.sublime-settings",
+		"/D/workspace/bakery_web/package.json",
+		"/D/workspace/bkeCloud/routes/bkeCloud.js",
+		"/D/workspace/bakery_web/extern/err.js",
+		"/D/workspace/TWT/理论答题/src/考试答题.html",
+		"/D/workspace/bkeCloud/models/gmModel.js",
+		"/D/workspace/bkeCloud/models/stdModel.js",
+		"/C/Users/Icemic/Desktop/untitled.md",
+		"/D/workspace/bakery/BKE宣传页/src/js/daisuki.js",
+		"/D/workspace/bakery/BKE宣传页/src/index.html",
+		"/D/workspace/bkeCloud/models/cloudModel.js",
+		"/D/workspace/bakery_web/bin/www",
+		"/D/workspace/bakery_web/routes/users.js",
+		"/D/workspace/bakery_web/routes/index.js",
+		"/D/workspace/bakery_web/settings.js",
+		"/D/workspace/bkeCloud/app.js",
+		"/D/workspace/bkeCloud/package.json",
+		"/D/workspace/bakery_web/views/error.jade",
+		"/D/workspace/bakery_web/views/layout.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/blocks/forbidUserGameModal.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/blocks/addUserGameModal.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/blocks/deleteUserGameModal.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/blocks/activeModal.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/blocks/userAuthoritySingleTable.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/userauthority.jade",
+		"/D/workspace/bkeCloud/doc/todo",
+		"/D/workspace/bkeCloud/doc/cloud_doc.txt",
+		"/D/workspace/bkeCloud/doc/status.txt",
+		"/D/workspace/bkeCloud/public/gameMaker/stylesheets/theme.css",
+		"/D/workspace/bkeCloud/views/gameMaker/blocks/gameTable.jade",
+		"/D/workspace/bkeCloud/libs/dateFormat.js",
+		"/C/Users/Icemic/Desktop/test/ide/config.bkpsr",
+		"/C/Users/Icemic/Desktop/test/BKE_systemdemo/config.bkpsr",
+		"/D/workspace/bkeCloud/routes/bbs.js",
+		"/D/workspace/bkeCloud/routes/index.js",
+		"/C/Users/Icemic/Desktop/test/ide/proj/标准系统.bkon",
+		"/C/Users/Icemic/Desktop/test/ide/script/macro.bkscr",
+		"/D/workspace/TWT/理论答题/src/stylesheets/theme.css",
+		"/C/Users/Icemic/Desktop/test/ide/script/main.bkscr",
+		"/C/Users/Icemic/Desktop/test/ide/system/iceLib/iceLib_Settings.bkscr",
+		"/C/Users/Icemic/Desktop/test/ide/script/settings.bkpsr",
+		"/C/Users/Icemic/Desktop/test/ide/script/config.bkpsr",
+		"/C/Users/Icemic/Desktop/test/ide/script/story.bkscr",
+		"/D/workspace/bkeCloud/public/gameMaker/js/userlist.js",
+		"/C/Users/Icemic/Desktop/test/BKE_systemdemo/iceLib_Sys_Menu.bkscr",
+		"/D/Dev/Qt5.3.2/5.3/Src/a.txt",
+		"/D/Dev/Qt5.3.2/5.3/Src/README",
+		"/D/workspace/bkeCloud/views/gameMaker/sidebar.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/gamemain.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/mygames_edit.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/mygames.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/index.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/addgame.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/blocks/gameEdit.jade",
+		"/D/workspace/bakery/游戏制作者平台/AircraftAdmin-Free/index.html",
+		"/D/workspace/bkeCloud/views/gameMaker/userlist.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/blocks/userTable.jade",
+		"/D/workspace/bkeCloud/public/gameMaker/js/index.js",
+		"/D/workspace/bkeCloud/public/bbs/js/userlist.js",
+		"/D/workspace/bkeCloud/views/gameMaker/main.jade",
+		"/D/workspace/bkeCloud/public/bbs/js/admin.js",
+		"/D/workspace/bkeCloud/views/bbs/admin-user.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/navbar.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/spin.jade",
+		"/D/workspace/bkeCloud/public/gameMaker/stylesheets/premium.css",
+		"/D/workspace/bkeCloud/views/bbs/loginForm.jade",
+		"/D/workspace/bakery/IDE-UI/src/_UI_SL.bkscr",
+		"/D/workspace/QtProj/IDE/src/style.css",
+		"/D/workspace/QtProj/IDE_test/A.bkproj",
+		"/D/Dev/Arduino/arduino-1.0.5-r2/libraries/IRremote/IRremote.h",
+		"/D/Dev/Arduino/arduino-1.0.5-r2/libraries/IRremote/IRremote.cpp",
+		"/D/Dev/Arduino/arduino-1.0.5-r2/libraries/IRremote/IRremoteInt.h",
+		"/D/11/src/js/index.js",
+		"/D/workspace/bkeCloud/views/bbs/topic.jade",
+		"/D/workspace/bkeCloud/views/bbs/editTopic.jade",
+		"/D/workspace/bkeCloud/views/bbs/publishTopic.jade",
+		"/D/workspace/bkeCloud/public/bbs/js/index.js",
+		"/D/workspace/bkeCloud/models/bbsModel.js",
+		"/D/workspace/bkeCloud/views/bbs/admin-field.jade",
+		"/D/workspace/bkeCloud/public/bbs/js/reply.js",
+		"/D/workspace/bkeCloud/views/bbs/replyModel.jade",
+		"/D/workspace/bkeCloud/views/bbs/topicList.jade",
+		"/D/workspace/bkeCloud/views/bbs/userCenter.jade",
+		"/D/workspace/bkeCloud/settings.js",
+		"/D/workspace/bkeCloud/views/bbs/replyContent.jade"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"D:\\workspace\\bakery\\游戏制作者平台\\AircraftAdmin-Free",
+			"D:\\workspace\\bkeCloud\\public\\bbs\\images"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"this.textRect",
+			"this.windowPos",
+			"this.windowOpacity",
+			"this.windowColor",
+			"this.windowFile",
+			"this._lastStamp",
+			"this._speed",
+			"this.textNum",
+			"this.text",
+			"console",
+			" ",
+			"text",
+			"yInterval",
+			" = ",
+			"this.xInterval",
+			"_currentLine",
+			"lineWidth",
+			"consol",
+			"dirty",
+			"lines[i]",
+			"linePositionY",
+			"linePositionX",
+			"MessageLayer",
+			"characterPositionY",
+			"characterPositionX",
+			"maxLineWidth",
+			"characterWidths",
+			"lineWidths",
+			"lineHeight",
+			"fontProperties",
+			"properties",
+			"context.lineWidth",
+			"word",
+			"Layer",
+			"wordWrap = ",
+			"wordWrap",
+			"wordWidthWithSpace",
+			"wordWrap =",
+			"speed",
+			"interval",
+			"text",
+			"=",
+			".",
+			"Graphics",
+			"Layer",
+			"new Error(\" ",
+			"this.currentCell++",
+			"layer",
+			"Animation",
+			"_setCell",
+			"n",
+			"setFrame",
+			"frame",
+			"y",
+			"weight",
+			"MovieClip",
+			"width",
+			"DisplayObjectContainer",
+			"TempDisplayObjectContainer",
+			"loadNextFrame",
+			"_source",
+			":load",
+			"anchor",
+			"x",
+			"dst_pos",
+			"1.f",
+			"5f",
+			" },",
+			"\", ",
+			", ",
+			"	{ L",
+			"dst_pos",
+			"child",
+			"PIXI.DisplayObjectContainer",
+			"DisplayObjectContainer",
+			"sprite",
+			"TempDisplayObjectContainer",
+			"ModesWebGL[PIXI.blendModes.BKEngine]        = [gl.O",
+			"PIXI.blendModes.ADD",
+			"PIXI.blendModes.SATURATION",
+			"SRC_ALPHA",
+			".Sprite.",
+			"PIXI.blendModes.NORMAL",
+			"blendModesWebGL",
+			"currentBlendMode",
+			"blendModeWebGL",
+			"gl.blendFunc",
+			"PretransFilter",
+			".shader =",
+			"backgroundColor",
+			".Stage",
+			"_filterBlock",
+			"DisplayObjectCon",
+			"backgroundColor",
+			"backgroundColorString",
+			"backgroundColorString ",
+			"children",
+			"addto",
+			"child",
+			"sprite",
+			"bg",
+			"renderDisplayObject",
+			"DisplayObjectContainer.prototype = Object",
+			"DisplayObjectContainer",
+			".DisplayObjectContainer.",
+			"SpriteBatch",
+			".addChild",
+			"addChild",
+			"PIXI.Sprite.pro",
+			"renderDisplayObject",
+			"PIXI.Texture",
+			"this.children.length",
+			"prototype._renderWebGL",
+			"._renderWebGL",
+			"_render",
+			"uniform2f",
+			"this.children.length",
+			".addChild",
+			"_renderWebGL",
+			".render(",
+			"setChildIndex",
+			"index",
+			"stageConfig",
+			"document.body",
+			"var ",
+			"Global",
+			"root",
+			"bg"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"res.sendEx",
+			"\\tapp",
+			"\\t",
+			"Sprite"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 10,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/modules/Graphics.js",
+					"settings":
+					{
+						"buffer_size": 11674,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10712,
+								10712
+							]
+						],
+						"settings":
+						{
+							"auto_name": "define",
+							"is_preview": true,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 7208.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/workspace/BKEngine/BKEngine/Classes/Graphic.cpp",
+					"settings":
+					{
+						"buffer_size": 60471,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								34138,
+								34138
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 24121.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/workspace/BKEngine/BKEngine/Classes/Node/Layer.h",
+					"settings":
+					{
+						"buffer_size": 4981,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2261,
+								2261
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1261.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/workspace/BKEngine/BKEngine/Classes/Node/Layer.cpp",
+					"settings":
+					{
+						"buffer_size": 29145,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23838,
+								23838
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 16615.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/workspace/BKEngine/BKEngine/Classes/Graphic.h",
+					"settings":
+					{
+						"buffer_size": 10087,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8019,
+								8019
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1620.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/views/index.html",
+					"settings":
+					{
+						"buffer_size": 2024,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1312,
+								1322
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 558.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "test/index.html",
+					"settings":
+					{
+						"buffer_size": 4507,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4181,
+								4181
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1458.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "test/libs/pixi.dev.js",
+					"settings":
+					{
+						"buffer_size": 569029,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								51296,
+								51296
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 34092.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/modules/Graphics/MessageLayer.js",
+					"settings":
+					{
+						"buffer_size": 2058,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								628,
+								516
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 486.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/modules/Graphics/pixi.dev.js",
+					"settings":
+					{
+						"buffer_size": 567672,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								88892,
+								88903
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 60241.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/modules/Graphics/EastAsianText.js",
+					"settings":
+					{
+						"buffer_size": 6174,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								86,
+								123
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 137.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/D/Develop/引擎重写/iceleaf.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 183.0,
+	"status_bar_visible": true
+}

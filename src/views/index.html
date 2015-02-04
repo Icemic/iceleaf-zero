@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>pixi.js example 1</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #000000;
+		}
+	</style>
+	<script src="../libs/sea.js"></script>
+</head>
+<body>
+	<script>
+
+	seajs.config({
+		base: "../modules/",
+		alias: {}
+	});
+
+	// 加载入口模块
+	seajs.use("../modules/iceleaf");
+
+	
+	
+
+
+
+	var pretransTexture;
+	function pretrans(){
+		//bufferStage.addChild(container);
+		//bufferRenderder.render(bufferStage);
+		//stage.addChild(container);
+		// pretransTexture = new PIXI.Texture.fromCanvas(bufferRenderder.view);
+		var renderTexture = new PIXI.RenderTexture(container.width, container.height);
+		renderTexture.render(container);
+		pretransTexture = renderTexture;
+		var pretransFilter = new PIXI.PretransFilter(pretransTexture);
+		container.filters = [pretransFilter];
+	}
+
+	var crossfadeFilter;
+	var universalFilter;
+	function setFilters(){
+		//crossfadeFilter = new PIXI.CrossFadeFilter(pretransTexture);
+		var ruleTexture = PIXI.Texture.fromImage('./res/010.bmp');
+		universalFilter = new PIXI.UniversalFilter(pretransTexture,ruleTexture);
+	}
+
+	function doSomething(){
+		// var bellyTexture = PIXI.Texture.fromImage("./res/test.png");
+		// var belly = new PIXI.Sprite(bellyTexture);
+		// container.addChild(belly);
+
+		var bg2Texture = PIXI.Texture.fromImage('./res/BG25a_1280.jpg');
+		var bg2 = new PIXI.Sprite(bg2Texture);
+		bg2.position.x = 0;
+		bg2.position.y = 0;
+		bg2.scale = new PIXI.Point(600/720,600/720);
+		container.addChild(bg2);
+	}
+
+	function trans(){
+		//container.filters = [crossfadeFilter];
+		//container.filters = null;
+		//crossfadeFilter.progress = 0;
+		//Global.tickFunctions.push(function(){crossfadeFilter.progress += 0.006;});
+
+		container.filters = [universalFilter];
+		universalFilter.progress = 0;
+		Tween.get(universalFilter).wait(0).to({progress:1}, 1000);
+		//Global.tickFunctions.push(function(){universalFilter.progress += 0.006;});
+	}
+
+	function test(){
+		pretrans();
+		setFilters();
+		doSomething();
+		trans();
+	}
+
+	</script>
+
+	</body>
+</html>

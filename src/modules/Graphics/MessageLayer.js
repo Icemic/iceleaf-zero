@@ -27,10 +27,10 @@ define(function(require,exports,module){
 			this.textSprite.x = 20;
 			this.textSprite.y = 20;
 
-
+			// this.s
 
 			//注意this.textSprite的引用
-			this.addChild(this.textSprite);	
+			this.addChild(this.textSprite);
 
 		};
 
@@ -71,6 +71,7 @@ define(function(require,exports,module){
 		PIXI.MessageLayer.prototype.addText = function(text){
 			this.textSprite.setText(text);
 		}
+
 
 		PIXI.MessageLayer.prototype.textOn = function(){
 			this.visible = true;

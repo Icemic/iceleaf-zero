@@ -3,6 +3,12 @@ define(function(require,exports,module){
 	//加载依赖
 
 	var PIXI = require('Graphics/pixi.dev.js');
+
+	//绘制方式补丁……
+
+	// PIXI.blendModes.BKEngine = 233;
+
+
 	require('Graphics/PretransFilter.js')(PIXI);
 	require('Graphics/CrossFadeFilter.js')(PIXI);
 	require('Graphics/UniversalFilter.js')(PIXI);
@@ -23,8 +29,8 @@ define(function(require,exports,module){
 	//常量
 
 	exports.BASICLAYER = -1;
+	exports.MESSAGELAYER = -2;
 
-	//PIXI.blendModes.BKEngine = 233;
 	
 
 	//内置方法
@@ -41,8 +47,16 @@ define(function(require,exports,module){
 
 	exports.init = function(DOM){
 		spriteMap[-1] = stage = new PIXI.Stage(stageConfig.backgroundColor);
+		stage.index = -1;
+		var messagelayer = new PIXI.MessageLayer();
+		spriteMap[-2] = messagelayer;
+		messagelayer.zorder = 999;
+		messagelayer.type = 'messagelayer';
+		messagelayer.index = -2;
+		stage.addChild(messagelayer);
 		renderer = PIXI.autoDetectRenderer(stageConfig.width, stageConfig.height);
 		PIXI.blendModesWebGL[PIXI.blendModes.NORMAL] = [renderer.gl.SRC_ALPHA,renderer.gl.ONE_MINUS_SRC_ALPHA];
+		// PIXI.blendModesWebGL[PIXI.blendModes.BKEngine] = [renderer.gl.SRC_ALPHA,renderer.gl.ONE_MINUS_SRC_ALPHA];
 		exports.DOMView = renderer.view;
 		(DOM || document.body).appendChild(renderer.view);
 	}
@@ -368,8 +382,35 @@ define(function(require,exports,module){
 			throw new Error("[messagelayer] Too few arguments.");
 		}
 
+		//检查index是否被占用，若占用则 remove%delete
+		var sprite = spriteMap[index];
+		if(sprite&&sprite.type!=='messagelayer')
+			this.remove(index,true);
+		else if(sprite){
+			if(active){
+				spriteMap[this.MESSAGELAYER].visible = false;
+				sprite.visible = true;
+				this.MESSAGELAYER = index;
+			}
+			return
+		}
+		//加载 messagelayer
+		var messagelayer = new PIXI.MessageLayer();
+		messagelayer.zorder = 999;
+		messagelayer.index = index;
+		messagelayer.type = 'messagelayer';
+		if(active){
+			spriteMap[this.MESSAGELAYER].visible = false;
+			messageLayer.visible = true;
+			this.MESSAGELAYER = index;
+		}
+		spriteMap[index] = messagelayer;
 	}
 
+	exports.text = function(text){
+		var messageLayer = spriteMap[this.MESSAGELAYER];
+
+	}
 
 
 

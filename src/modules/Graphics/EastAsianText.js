@@ -19,6 +19,8 @@ define(function(require,exports,module){
 
 			this._currentNum = this._printNum = this._currentLine = 0;
 
+			this.blendMode = 7; //临时修正，WEBGL下7与Normal效果相同
+
 		};
 
 		PIXI.EastAsianText.prototype = Object.create( PIXI.Text.prototype );
@@ -38,7 +40,7 @@ define(function(require,exports,module){
 			var lineWidth = 0;
 			var result = '';
 			for (var i = 0; i < text.length; i++) {
-				lineWidth += this.context.measureText(text[i]).width+this.style.xInterval;
+				lineWidth += this.context.measureText(text[i]).width+this.style.xInterval+this.style.strokeThickness;
 				if(lineWidth >= this.style.wordWrapWidth+this.style.xInterval){
 					lineWidth = 0;
 					result += '\n';
@@ -98,7 +100,7 @@ define(function(require,exports,module){
 						this.characterWidths.push(0);	//使width与this.wrappedText对应
 						break;
 					default: 
-						var width = this.context.measureText(characters[i]).width + this.style.xInterval;
+						var width = this.context.measureText(characters[i]).width + this.style.xInterval + this.style.strokeThickness;
 						this.characterWidths.push(width);
 						lineWidth += width;
 						break;

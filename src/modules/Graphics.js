@@ -380,7 +380,7 @@ define(function(require,exports,module){
 	exports.messageLayer = function(index,active){
 		if(arguments.length<1){
 			throw new Error("[messagelayer] Too few arguments.");
-		}
+		} 
 
 		//检查index是否被占用，若占用则 remove%delete
 		var sprite = spriteMap[index];
@@ -408,8 +408,31 @@ define(function(require,exports,module){
 	}
 
 	exports.text = function(text){
+		if(arguments.length<1){
+			throw new Error("[text] Too few arguments.");
+		}
 		var messageLayer = spriteMap[this.MESSAGELAYER];
+		messageLayer.addText(text);
+	}
 
+	exports.i = function(){
+		var messageLayer = spriteMap[this.MESSAGELAYER];
+		messageLayer.i();
+	}
+
+	exports.b = function(){
+		var messageLayer = spriteMap[this.MESSAGELAYER];
+		messageLayer.b();
+	}
+
+	exports.s = function(){
+		var messageLayer = spriteMap[this.MESSAGELAYER];
+		messageLayer.s();
+	}
+
+	exports.u = function(){
+		var messageLayer = spriteMap[this.MESSAGELAYER];
+		messageLayer.u();
 	}
 
 
@@ -466,7 +489,10 @@ define(function(require,exports,module){
 		// messageLayer.textOn()
 		messageLayer.setTextSpeed(50);
 		messageLayer.setTextInterval(0,12);
+		window.testss = function(a) {messageLayer.addText(a)};
+
 		messageLayer.addText("This is a test text, which is auto-wrapped. 这是一段测试文字，这段文字会Auto-wrapped。这是一段ｔｅｓｔ文字，这段文字会自动换行。这是一段测试文字，这段文字会自动换行。这是一段测试文字，这段文字会自动换行。")
+		messageLayer.addText("aaaaadsfsdfsfsddsddfsdfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
 		//stage.addChild(mc);
 
 		// mc.x = 200;

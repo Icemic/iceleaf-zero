@@ -3,7 +3,7 @@ define(function(require,exports,module){
 
 
 	var defaultStyle = {
-		font: 'normal 24px 微软雅黑',
+		// font: 'normal 24px 微软雅黑',
 		fill: 'white',
 		align: 'left',
 		stroke: 'black',
@@ -15,7 +15,18 @@ define(function(require,exports,module){
 		dropShadowAngle: Math.PI/4,
 		dropShadowDistance: 5,
 		xInterval: 0,
-		yInterval: 12
+		yInterval: 12,
+		fontStyle: "normal",
+		fontSize: "24px",
+		fontName: "微软雅黑"
+	}
+
+	FLAGS = {
+		Normal: 1,
+		Italic: 2,
+		Bold: 4,
+		Strike: 8,
+		Underline: 16
 	}
 
 	module.exports = function(PIXI){
@@ -26,6 +37,10 @@ define(function(require,exports,module){
 			this.textSprite = new PIXI.EastAsianText('',defaultStyle);
 			this.textSprite.x = 20;
 			this.textSprite.y = 20;
+
+			this.fontStyle = 1;
+
+			this.textCache = '';	//当前屏幕的文本
 
 			// this.s
 
@@ -69,7 +84,62 @@ define(function(require,exports,module){
 		}
 
 		PIXI.MessageLayer.prototype.addText = function(text){
-			this.textSprite.setText(text);
+			this.textCache += text;
+			this.textSprite.setText(this.textCache,false);
+		}
+
+		PIXI.MessageLayer.prototype.i = function(){
+			if((this.fontStyle&FLAGS.Italic)===FLAGS.Italic)
+				this.fontStyle &= ~FLAGS.Italic;
+			else
+				this.fontStyle |= FLAGS.Italic;
+			this._setTextStyle();
+		}
+
+		PIXI.MessageLayer.prototype.b = function(){
+			if((this.fontStyle&FLAGS.Bold)===FLAGS.Bold)
+				this.fontStyle &= ~FLAGS.Bold;
+			else
+				this.fontStyle |= FLAGS.Bold;
+			this._setTextStyle();
+		}
+
+		PIXI.MessageLayer.prototype.s = function(){
+			if((this.fontStyle&FLAGS.Strike)===FLAGS.Strike)
+				this.fontStyle &= ~FLAGS.Strike;
+			else
+				this.fontStyle |= FLAGS.Strike;
+			// this._setTextStyle();
+		}
+
+		PIXI.MessageLayer.prototype.u = function(){
+			if((this.fontStyle&FLAGS.Underline)===FLAGS.Underline)
+				this.fontStyle &= ~FLAGS.Underline;
+			else
+				this.fontStyle |= FLAGS.Underline;
+			// this._setTextStyle();
+		}
+
+		PIXI.MessageLayer.prototype.r = function(){
+			this.addText('\n');
+		}
+
+		PIXI.MessageLayer.prototype.l = function(){
+			
+		}
+
+		PIXI.MessageLayer.prototype._setTextStyle = function(){
+			if((this.fontStyle&FLAGS.Italic)===FLAGS.Italic && 
+				(this.fontStyle&FLAGS.Bold)===FLAGS.Bold)
+				this.textSprite.setItalicBold();
+			else if((this.fontStyle&FLAGS.Italic)===FLAGS.Italic)
+				this.textSprite.setItalic();
+			else if((this.fontStyle&FLAGS.Bold)===FLAGS.Bold)
+				this.textSprite.setBold();
+			// else if((this.fontStyle&FLAGS.Strike)===FLAGS.Strike)
+			// else if((this.fontStyle&FLAGS.Underline)===FLAGS.Underline)
+			else
+				this.textSprite.setNormal();
 		}
 
 

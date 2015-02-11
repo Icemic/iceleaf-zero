@@ -7,19 +7,23 @@ define(function(require,exports,module){
 
 			this.style.pageWrap = false;
 			this.style.pageWrapWidth = 100;
-			this.style.xInterval = 0;
-			this.style.yInterval = 12;
+			// this.style.xInterval = 0;
+			// this.style.yInterval = 12;
 
+			// this.style.fontStyle = "normal";
+			// this.style.fontSize = "24px";
+			// this.style.fontName = "微软雅黑";
 
-			this.wrappedText = '';
-			this.characterPositionX = this.characterPositionY = 0;
+			this.wrappedText = '';	//分行后的文本
+			this.characterPositionX = this.characterPositionY = 0;	//绘制坐标
 
-			this._speed = 50;
-			this._lastStamp = Date.now();
+			this._speed = 50;	//文字打印速度（ms）
+			this._lastStamp = Date.now();	//时间戳
 
+			//依次为 本次应绘制到的位置 本次已绘制到的位置 本次应绘制的行-1 
 			this._currentNum = this._printNum = this._currentLine = 0;
 
-			this.blendMode = 7; //临时修正，WEBGL下7与Normal效果相同
+			this.blendMode = 7; //临时hack，WEBGL下7与Normal效果相同
 
 		};
 
@@ -36,7 +40,7 @@ define(function(require,exports,module){
 		});
 
 		PIXI.EastAsianText.prototype.wordWrap = function(text){
-			this.context.font = this.style.font;
+			this.context.font = this.style.fontStyle+' '+this.style.fontSize+' '+this.style.fontName;
 			var lineWidth = 0;
 			var result = '';
 			for (var i = 0; i < text.length; i++) {
@@ -52,10 +56,31 @@ define(function(require,exports,module){
 			return result;
 		}
 
-		PIXI.EastAsianText.prototype.setText = function(text){
+		PIXI.EastAsianText.prototype.setText = function(text,reset){
 			PIXI.Text.prototype.setText.call(this,text);
-			this._printNum = 0;
+			this._printNum = this._currentLine = 0;
+			if(reset){
+				this._currentNum = this._currentLine = 0;
+				this._printNum = this.characterPositionX = this.characterPositionY = 0;
+			}
 			// this.updateText()
+			this.printAll()
+		}
+
+		PIXI.EastAsianText.prototype.setItalic = function(){
+			this.style.fontStyle = "italic";
+		}
+
+		PIXI.EastAsianText.prototype.setBold = function(){
+			this.style.fontStyle = "bold";
+		}
+
+		PIXI.EastAsianText.prototype.setItalicBold = function(){
+			this.style.fontStyle = "italic bold";
+		}
+
+		PIXI.EastAsianText.prototype.setNormal = function(){
+			this.style.fontStyle = "normal";
 		}
 
 		PIXI.EastAsianText.prototype.setTextInterval = function(x,y){
@@ -66,13 +91,17 @@ define(function(require,exports,module){
 		PIXI.EastAsianText.prototype.setTextSpeed = function(speed){
 			this.speed = speed;
 		}
+		PIXI.EastAsianText.prototype.printAll = function(){
+			if(this.wrappedText)
+				this._currentNum = this.wrappedText.length -1;
+		}
 
 		PIXI.EastAsianText.prototype.updateText = function(){
 			this.wrappedText = this.wordWrap(this.text);
 
 			this.texture.baseTexture.resolution = this.resolution;
 
-			this.context.font = this.style.font;
+			this.context.font = this.style.fontStyle+' '+this.style.fontSize+' '+this.style.fontName;
 
 			var outputText = this.text;
 
@@ -80,13 +109,13 @@ define(function(require,exports,module){
 			// preserve original text
 			if(this.style.wordWrap)outputText = this.wrappedText;
 
-			outputText = outputText.replace(/(?:\r\n|\r)/,'\n');
+			outputText = outputText.replace(/(?:\r\n|\r)/,'\n')+'\n';	//末尾添加\n使最后不满一行强制视为一行
 
 			var characters = outputText.split('');
 			this.maxLineWidth = 0;
 			this.characterWidths = [];  //包含interval
 			this.lineWidths = [];
-			this.fontProperties = this.determineFontProperties(this.style.font);
+			this.fontProperties = this.determineFontProperties(this.style.fontStyle+' '+this.style.fontSize+' '+this.style.fontName);
 			var lineCount = 0;	//行数
 
 			var lineWidth = 0;
@@ -107,7 +136,8 @@ define(function(require,exports,module){
 				}
 			};
 
-			this.lineWidths[lineCount] = lineWidth;
+			// this.lineWidths[lineCount] = lineWidth;
+
 
 			var width = this.maxLineWidth + this.style.strokeThickness;
 			if(this.style.dropShadow)width += this.style.dropShadowDistance;
@@ -138,9 +168,10 @@ define(function(require,exports,module){
 
 		PIXI.EastAsianText.prototype.updateTransform = function(){
 			PIXI.Text.prototype.updateTransform.call(this);
-
-			if(this._currentNum>=this.wrappedText.length)
+			if(this._currentNum>=this.wrappedText.length){
+				this._lastStamp = Date.now();
 				return
+			}
 
 			var stamp = Date.now();
 			if(stamp - this._lastStamp < this._speed) return;
@@ -151,7 +182,7 @@ define(function(require,exports,module){
 			if(this._currentNum>=this.wrappedText.length)
 				this._currentNum = this.wrappedText.length;
 
-			this.context.font = this.style.font;
+			this.context.font = this.style.fontStyle+' '+this.style.fontSize+' '+this.style.fontName;;
 			this.context.strokeStyle = this.style.stroke;
 			this.context.lineWidth = this.style.strokeThickness;
 			this.context.textBaseline = 'alphabetic';
